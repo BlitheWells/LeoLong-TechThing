@@ -1,8 +1,14 @@
 <nav>
-<a href="/LeoLong-TechThing/" {% if page.url == "/LeoLong-TechThing/" %}style="color: red;"{% endif %}>
-    Home
-  </a>
-  <a href="/LeoLong-TechThing/about.html" {% if page.url == "/LeoLong-TechThing/about.html" %}style="color: red;"{% endif %}>
+  <div id="right">
+	<li>
+		<a href="{{ site.baseurl }}/" {% if page.url == "/" %}style="color: red;"{% endif %}>
+		Home
+		</a>
+    </li>
+	<li>
+  <a href="{{ site.baseurl }}/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>
     About
   </a>
+	</li>
+  </div>
 </nav>
