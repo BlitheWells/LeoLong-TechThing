@@ -2,25 +2,17 @@
 layout: player
 title: A player
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Local MP3 Player</title>
-    <script>
-        function playAtSpecificTime(time) {
-            var audio = document.getElementById('myAudio');
-            audio.currentTime = time; // 定位到第time秒
-            audio.play();
-        }
-    </script>
-</head>
-<body>
+<script>
+    function playAtSpecificTime(time) {
+        var audio = document.getElementById('myAudio');
+        audio.currentTime = time; // 定位到第time秒
+        audio.play();
+    }
+</script>
+<div>
     <audio id="myAudio" controls>
         <source src="https://github.com/BlitheWells/other/blob/main/three-one-module1-2.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <button onclick="playAtSpecificTime(29)">第二页
-    </button>
-</body>
-</html>
+    <button onclick="playAtSpecificTime(29)">第二页</button>
+</div>
